@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,OAAO;CACtB",
+    "sources": [
+        "main.scss",
+        "smart-grid.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

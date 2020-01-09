@@ -1,0 +1,148 @@
+.our-team {
+  padding: 80px 0;
+}
+
+.our-team .title-primary {
+  margin-bottom: 100px;
+}
+
+.our-team .employee-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2379be;
+  color: #fff;
+  border-radius: 200px;
+  margin-bottom: 100px;
+}
+
+.our-team .employee-photo {
+  width: 364px;
+  height: 364px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.our-team .employee-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 100px;
+}
+
+.our-team .employee-name {
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.our-team .employee-desc {
+  font-size: 25px;
+  line-height: 35px;
+  width: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+  .our-team {
+    padding: 80px 0;
+  }
+  .our-team .title-primary {
+    margin-bottom: 80px;
+  }
+  .our-team .employee-card {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .our-team .employee-photo {
+    width: 291px;
+    height: 291px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .our-team .employee-content {
+    padding-left: 40px;
+  }
+  .our-team .employee-name {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .our-team .employee-desc {
+    font-size: 18px;
+    line-height: 30px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-team {
+    padding: 60px 0;
+  }
+  .our-team .title-primary {
+    margin-bottom: 60px;
+  }
+  .our-team .employee-card {
+    width: 90%;
+  }
+  .our-team .employee-photo {
+    width: 170px;
+    height: 170px;
+  }
+  .our-team .employee-name {
+    font-size: 35px;
+    line-height: 36px;
+    margin-bottom: 7px;
+  }
+  .our-team .employee-desc {
+    font-size: 16px;
+    line-height: 20px;
+    width: 300px;
+  }
+  .our-team .employee-content {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .our-team {
+    padding: 40px 0;
+  }
+  .our-team .title-primary {
+    margin-bottom: 50px;
+  }
+  .our-team .employee-card {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .our-team .employee-photo {
+    width: 114px;
+    min-width: 114px;
+    height: 114px;
+  }
+  .our-team .employee-content {
+    padding-left: 10px;
+  }
+  .our-team .employee-content br {
+    display: none;
+  }
+  .our-team .employee-name {
+    font-size: 18px;
+    line-height: 19px;
+    margin-bottom: 5px;
+  }
+  .our-team .employee-desc {
+    width: 100%;
+    font-size: 14px;
+    line-height: 13px;
+    max-height: 66px;
+    overflow-y: scroll;
+  }
+}
+/*# sourceMappingURL=our-team.css.map */

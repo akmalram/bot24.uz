@@ -1,0 +1,215 @@
+.contacts-block {
+  padding: 80px 0;
+}
+
+.contacts-block .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts-block .card-icon {
+  font-size: 200px;
+  display: block;
+  margin-right: 30px;
+  color: #2379be;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.contacts-block .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-block .card p {
+  font-size: 40px;
+  color: #2379be;
+  line-height: 35px;
+}
+
+.contacts-block .card-username {
+  color: #2379be;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.contacts-block .card-username:hover {
+  color: #92bddf;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-block {
+    padding: 60px 0;
+  }
+  .contacts-block .card-icon {
+    font-size: 140px;
+    margin-right: 10px;
+  }
+  .contacts-block .card p {
+    font-size: 30px;
+  }
+  .contacts-block .card-username {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacts-block {
+    padding: 40px 0;
+  }
+  .contacts-block .card-icon {
+    font-size: 80px;
+  }
+  .contacts-block .card p {
+    font-size: 20px;
+    line-height: 19px;
+  }
+  .contacts-block .card-username {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.map-form .title-secondary {
+  margin-bottom: 50px;
+}
+
+.map-form .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.map {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(58.33333% - 30px);
+}
+
+@media screen and (max-width: 1024px) {
+  .map {
+    width: calc(66.66667% - 30px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    width: calc(91.66667% - 30px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .map {
+    margin-bottom: 25px;
+  }
+  .map iframe {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .map iframe {
+    height: 220px;
+  }
+}
+
+.form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(41.66667% - 30px);
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+    width: calc(66.66667% - 30px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: calc(91.66667% - 30px);
+  }
+}
+
+.form label {
+  display: block;
+  cursor: default;
+  margin-bottom: 30px;
+}
+
+.form .form-input {
+  display: block;
+  font-size: 25px;
+  background: none;
+  border: 2px solid #2379be;
+  padding: 12px 18px;
+  margin-top: 17px;
+  width: 503px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2379be;
+  border-radius: 50px;
+  -webkit-transition: border-color .3s;
+  transition: border-color .3s;
+}
+
+.form .form-input:focus {
+  outline: none;
+}
+
+.form ::-webkit-input-placeholder {
+  color: #2379be;
+}
+
+.form :-ms-input-placeholder {
+  color: #2379be;
+}
+
+.form ::-ms-input-placeholder {
+  color: #2379be;
+}
+
+.form ::placeholder {
+  color: #2379be;
+}
+
+.form .label-text {
+  font-size: 30px;
+}
+
+.form .btn-primary {
+  display: block;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .form .form-input {
+    font-size: 21px;
+    padding: 10px 16px;
+    width: 403px;
+  }
+  .form .form-input:focus {
+    outline: none;
+  }
+  .form .btn-primary {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=contacts-block.css.map */

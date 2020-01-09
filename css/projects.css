@@ -1,0 +1,159 @@
+.projects {
+  padding: 80px 0;
+}
+
+.projects .row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects .projects-container.hide .project.hidable {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .projects .btn-primary {
+    font-size: 20px;
+  }
+}
+
+.projects .swiper-button-prev,
+.projects .swiper-button-next {
+  background: none;
+  width: 40px;
+  height: 40px;
+  outline: none;
+}
+
+.project {
+  background: #2379be;
+  color: #fff;
+  margin: 10px auto;
+  margin-bottom: 22px;
+  margin-top: 0;
+  max-width: 100%;
+  width: 350px;
+  padding: 30px 20px;
+  border-radius: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 345px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-head .img {
+  margin-right: 10px;
+  min-width: 80px;
+  max-width: 80px;
+}
+
+.project-head .img img {
+  border-radius: 50%;
+}
+
+.project-title {
+  font-size: 24px;
+}
+
+.project .mt20 {
+  margin-top: 20px;
+}
+
+.project-open-link {
+  font-size: 22px;
+  cursor: pointer;
+  color: #2379be;
+  padding: 4px 17px;
+  border-radius: 6px;
+  line-height: 1;
+  display: inline-block;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.project-open-link i {
+  display: inline-block;
+  margin: 0 .07em;
+  vertical-align: -0.1em;
+  background: none;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.project-desc {
+  margin-bottom: auto;
+}
+
+.project-desc p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.project-desc ul {
+  margin: 22px 25px 0 10px;
+}
+
+.project-desc ul li {
+  list-style: disc !important;
+}
+
+@media screen and (max-width: 576px) {
+  .project {
+    padding: 15px;
+  }
+  .project-title {
+    font-size: 18px;
+  }
+  .project-open-link {
+    font-size: 21px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .project-open-link img {
+    display: inline-block;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    height: 1em;
+    width: 1em;
+    margin: 0 .07em;
+    vertical-align: -0.1em;
+    background: none;
+    padding: 0;
+    margin-right: 10px;
+  }
+  .project .img {
+    margin-right: 10px;
+    min-width: auto;
+  }
+  .project .img img {
+    width: 60px;
+    border-radius: 50%;
+  }
+  .project-desc p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .project-desc ul {
+    margin: 12px 15px 0 10px;
+  }
+  .project-desc ul li {
+    list-style: disc !important;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

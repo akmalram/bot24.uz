@@ -1,0 +1,86 @@
+@import './smart-grid.scss';
+
+.we-do {
+    position: relative;
+    padding-top: 80px;
+
+    .row {
+        justify-content: space-around;
+    }
+
+    .content {
+        @include col();
+        @include size(10);
+        @include size-md(18);
+        @include size-xs(24);
+    }
+
+    .image {
+        @include col();
+        @include size(14);
+
+        text-align: center;
+        margin-bottom: -5px;
+    }
+
+    .title-primary {
+        margin-bottom: 50px;
+
+        @include sm-block {
+            margin-bottom: 30px;
+        }
+    }
+
+    p {
+        max-width: 570px;
+        font-size: 25px;
+        line-height: 30px;
+        color: #2379be;
+        line-height: 1.5;
+        margin-bottom: 31px;
+        position: relative;
+        padding-left: 30px;
+        box-sizing: border-box;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+
+    @include md-block {
+        .content {
+            background: url('../images/robot-transparent.png') no-repeat center center;
+            padding-bottom: 250px;
+        }
+
+        .image {
+            display: none;
+        }
+    }
+
+    @include sm-block {
+        padding: 50px;
+        background: none;
+
+        p {
+            font-size: 23px;
+        }
+
+        .content {
+            background:none;
+            padding-bottom: 0;
+        }
+    }
+    @include xs-block {
+        padding: 50px 0;
+        background: none;
+
+        p {
+            font-size: 23px;
+        }
+    }
+}

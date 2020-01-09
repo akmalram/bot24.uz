@@ -1,0 +1,148 @@
+@import './smart-grid.scss';
+
+
+.contacts {
+    background-color: #2379be;
+    color: #fff;
+    padding: 80px 0;
+    
+
+    @include md(padding, 60px);
+
+    .title-primary {
+        margin-bottom: 30px;
+    }
+
+    .order-form {
+        @include col();
+        @include size(14);
+        @include size-md(24);
+
+        label {
+            display: block;
+            cursor: default;
+            margin-bottom: 30px;
+        }
+
+        .order-form-input {
+            display: block;
+            font-size: 25px;
+            background: none;
+            border: 2px solid #92bddf;
+            padding: 12px 18px;
+            margin-top: 17px;
+            width: 503px;
+            max-width: 100%;
+            box-sizing: border-box;
+            color: #fff;
+            border-radius: 50px;
+            transition: border-color .3s;
+
+
+            &:hover {
+                border-color: #fff;
+            }
+
+            &:focus {
+                border-color: #fff;
+                outline: none;
+            }
+        }
+
+        ::placeholder {
+            color: #92bddf;
+        }
+
+        .label-text {
+            font-size: 30px;
+        }
+
+        .btn-primary {
+            display: block;
+            margin-top: 50px;
+        }
+    }
+
+    .contact-numbers {
+        @include col();
+        @include size(10);
+        @include size-md(24);
+
+        .card {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            font-size: 74px;
+            display: block;
+            margin-right: 30px;
+            color: #fff;
+            transition: color .3s;
+
+            &:hover {
+                color: #92bddf;
+            }
+        }
+        .card p {
+            font-size: 30px;
+            color: #92bddf;
+            line-height: 35px;
+        }
+
+        .card-username {
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+            font-size: 30px;
+            line-height: 35px;
+
+            &:hover {
+                color: #92bddf;
+            }
+        }
+    }
+
+    // Media queries
+
+    @include sm-block {
+        padding: 20px;
+        
+        .order-form {
+            margin-bottom: 30px;
+
+            label {
+                margin-bottom: 20px;
+            }
+    
+            .order-form-input {
+                font-size: 18px;
+                padding: 8px 12px;
+            }
+    
+            .label-text {
+                font-size: 25px;
+            }
+    
+            .btn-primary {
+                margin-top: 30px;
+            }
+        }
+
+        .contact-numbers {
+    
+            .card-icon {
+                font-size: 54px;
+                margin-right: 20px;
+            }
+            .card p {
+                font-size: 25px;
+                line-height: 28px;
+            }
+    
+            .card-username {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+}

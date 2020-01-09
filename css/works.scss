@@ -1,0 +1,214 @@
+@import './smart-grid.scss';
+
+.works {
+    padding: 80px 0;
+
+    .row {
+        justify-content: center;
+    }
+}
+
+.work {
+    margin-bottom: 100px;
+
+    @include sm-block {
+        margin-bottom: 50px;
+    }
+
+    &-image {
+        @include col();
+        @include size(8);
+        @include size-md(13);
+        @include size-xs(24);
+
+        .img-container {
+            position: relative;
+            .smartphone {
+                width: 281px;
+                height: auto;
+            }
+
+            .gif {
+                position: absolute;
+                top: 28px;
+                left: 14px;
+                width: 253px;
+                height: 516px;
+                border-radius: 20px;
+                overflow: hidden;
+                background: none;
+            }
+        }
+    }
+
+    &-content {
+        @include col();
+        @include size(16);
+        @include size-md(24);
+
+        box-sizing: border-box;
+        color: #2379be;
+
+        .btn-primary {
+            border: 2px solid #2379be;
+        }
+    }
+
+    &-title {
+        font-size: 40px;
+    }
+
+    &-open-link {
+        font-size: 30px;
+        line-height: 40px;
+        cursor: pointer;
+        color: #2379be;
+
+        img {
+            display: inline-block;
+            border: none;
+            box-shadow: none;
+            height: 1em;
+            width: 1em;
+            margin: 0 .07em;
+            vertical-align: -0.1em;
+            background: none;
+            padding: 0;
+            margin-right: 10px;
+        }
+    }
+
+    .content-list {
+        background: #2379be;
+        padding: 20px;
+        color: #fff;
+        margin-top: 37px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+    }
+
+    .content-list ul {
+        transition: all .5s;
+    }
+
+    &-info {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        padding-left: 38px;
+        position: relative;
+        
+        i {
+            position: absolute;
+            top: 7px;
+            left: 15px;
+            font-size: 16px;
+        }
+    }
+
+    .bot_can {
+        margin-top: 8px;
+    }
+
+    .list-btn {
+        background: #fff;
+        width: 100%;
+        text-align: left;
+        border: none;
+        font-size: 25px;
+        color: #2379be;
+        padding: 6px 44px;
+        cursor: pointer;
+        border-radius: 30px;
+        position: relative;
+
+        &:focus {
+            outline: none;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            font-size: 20px;
+        }
+    }
+
+    .list-toggle {
+        margin-bottom: 10px;
+        ul {
+            max-height: 0;
+            overflow: hidden;
+            transition: all .3s;
+        }
+
+        li {
+            list-style: none;
+            font-size: 20px;
+            position: relative;
+            padding-left: 15px;
+            margin-top: 8px;
+
+            i {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .list-toggle.active {
+        ul {
+            max-height: 10000px;
+        }
+    }
+
+    // Media queries
+
+    @include md-block {
+        &-image {
+            .img-container {
+                display: none;
+            }
+        }
+
+        &-content {
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @include xs-block {
+        
+        &-title {
+            font-size: 30px;
+        }
+
+        &-info {
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 38px;
+        }
+
+        .content-list {
+            padding: 10px;
+        }
+        .list-btn {
+            font-size: 18px;
+    
+            i {
+                font-size: 16px;
+            }
+        }
+
+        .content-list {
+            li {
+                font-size: 16px;
+            }
+        }
+    }
+}

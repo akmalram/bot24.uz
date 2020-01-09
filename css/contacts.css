@@ -1,0 +1,175 @@
+.contacts {
+  background-color: #2379be;
+  color: #fff;
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts {
+    padding: 60px;
+  }
+}
+
+.contacts .title-primary {
+  margin-bottom: 30px;
+}
+
+.contacts .order-form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(58.33333% - 30px);
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts .order-form {
+    width: calc(100% - 30px);
+  }
+}
+
+.contacts .order-form label {
+  display: block;
+  cursor: default;
+  margin-bottom: 30px;
+}
+
+.contacts .order-form .order-form-input {
+  display: block;
+  font-size: 25px;
+  background: none;
+  border: 2px solid #92bddf;
+  padding: 12px 18px;
+  margin-top: 17px;
+  width: 503px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-transition: border-color .3s;
+  transition: border-color .3s;
+}
+
+.contacts .order-form .order-form-input:hover {
+  border-color: #fff;
+}
+
+.contacts .order-form .order-form-input:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+.contacts .order-form ::-webkit-input-placeholder {
+  color: #92bddf;
+}
+
+.contacts .order-form :-ms-input-placeholder {
+  color: #92bddf;
+}
+
+.contacts .order-form ::-ms-input-placeholder {
+  color: #92bddf;
+}
+
+.contacts .order-form ::placeholder {
+  color: #92bddf;
+}
+
+.contacts .order-form .label-text {
+  font-size: 30px;
+}
+
+.contacts .order-form .btn-primary {
+  display: block;
+  margin-top: 50px;
+}
+
+.contacts .contact-numbers {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(41.66667% - 30px);
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts .contact-numbers {
+    width: calc(100% - 30px);
+  }
+}
+
+.contacts .contact-numbers .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts .contact-numbers .card-icon {
+  font-size: 74px;
+  display: block;
+  margin-right: 30px;
+  color: #fff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.contacts .contact-numbers .card-icon:hover {
+  color: #92bddf;
+}
+
+.contacts .contact-numbers .card p {
+  font-size: 30px;
+  color: #92bddf;
+  line-height: 35px;
+}
+
+.contacts .contact-numbers .card-username {
+  color: #fff;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.contacts .contact-numbers .card-username:hover {
+  color: #92bddf;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 20px;
+  }
+  .contacts .order-form {
+    margin-bottom: 30px;
+  }
+  .contacts .order-form label {
+    margin-bottom: 20px;
+  }
+  .contacts .order-form .order-form-input {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+  .contacts .order-form .label-text {
+    font-size: 25px;
+  }
+  .contacts .order-form .btn-primary {
+    margin-top: 30px;
+  }
+  .contacts .contact-numbers .card-icon {
+    font-size: 54px;
+    margin-right: 20px;
+  }
+  .contacts .contact-numbers .card p {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  .contacts .contact-numbers .card-username {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+/*# sourceMappingURL=contacts.css.map */

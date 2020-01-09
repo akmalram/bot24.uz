@@ -1,0 +1,164 @@
+@import './smart-grid.scss';
+
+.our-team {
+    padding: 80px 0;
+
+    .title-primary {
+        margin-bottom: 100px;
+    }
+
+    .employee- {
+        &card {
+            display: flex;
+            background: #2379be;
+            color: #fff;
+            border-radius: 200px;
+
+            margin-bottom: 100px;
+        }
+
+        &photo {
+            width: 364px;
+            height: 364px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 100px;
+        }
+
+        &name {
+            font-size: 60px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        &desc {
+            font-size: 25px;
+            line-height: 35px;
+            width: 500px;
+        }
+    }
+
+    @include md-block {
+        padding: 80px 0;
+
+        .title-primary {
+            margin-bottom: 80px;
+        }
+        
+        .employee- {
+
+            &card {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 60px;
+            }
+
+            &photo {
+                width: 291px;
+                height: 291px;
+                flex-shrink: 0;
+            }
+
+            &content {
+                padding-left: 40px;
+            }
+
+            &name {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+            &desc {
+                font-size: 18px;
+                line-height: 30px;
+                width: 300px;
+            }
+        }
+    }
+
+    @include sm-block {
+        padding: 60px 0;
+
+        .title-primary {
+            margin-bottom: 60px;
+        }
+        
+        .employee- {
+            &card {
+                width: 90%;
+            }
+
+            &photo {
+                width: 170px;
+                height: 170px;
+            }
+
+            &name {
+                font-size: 35px;
+                line-height: 36px;
+                margin-bottom: 7px;
+            }
+
+            &desc {
+                font-size: 16px;
+                line-height: 20px;
+                width: 300px;
+            }
+
+            &content {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    @include xs-block {
+        padding: 40px 0;
+
+        .title-primary {
+            margin-bottom: 50px;
+        }
+        
+        .employee- {
+
+            &card {
+                width: 100%;
+                margin-bottom: 50px;
+
+            }
+
+            &photo {
+                width: 114px;
+                min-width: 114px;
+                height: 114px;
+            }
+
+            &content {
+                padding-left: 10px;
+
+                br {
+                    display: none;
+                }
+            }
+
+            &name {
+                font-size: 18px;
+                line-height: 19px;
+                margin-bottom: 5px;
+            }
+
+            &desc {
+                width: 100%;
+                font-size: 14px;
+                line-height: 13px;
+                max-height: 66px;
+                overflow-y: scroll;
+            }
+        }
+    }
+}

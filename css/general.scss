@@ -1,0 +1,132 @@
+@import './smart-grid.scss';
+
+@include reset();
+
+body {
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    @include wrapper();
+}
+
+.show-xs {
+    display: none;
+    @include xs(display, block);
+}
+
+.show-sm {
+    display: none;
+    @include sm(display, block);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.title-primary {
+    font-size: 60px;
+    color: rgb(35, 121, 190);
+
+    @include sm-block {
+        font-size: 40px;
+    }
+
+    @include sm-block {
+        font-size: 30px;
+    }
+
+    &.white {
+        color: #fff;
+    }
+
+}
+
+.title-secondary {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: normal;
+    color: rgb(35, 121, 190);
+
+    @include sm-block {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    @include sm-block {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    &.white {
+        color: #fff;
+    }
+
+}
+
+.row {
+    @include row-flex();
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #2379be;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 11px 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+    display: inline-block;
+
+    &:hover {
+        background: #fff;
+        color: #2379be;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-primary.white {
+    background-color: #fff;
+    color: #2379be;
+
+    &:hover {
+        background: #92bddf;
+        border-color: #92bddf;
+    }
+}
+
+.show-xs {
+    display: none !important;
+    @include xs(display, block !important);
+}
+
+.show-sm {
+    display: none !important;
+    @include sm(display, block !important);
+}
+
+.hide-sm {
+    @include sm-block {
+        display: none !important;
+    }
+}
+
+.hide-xs {
+    @include xs-block {
+        display: none !important;
+    }
+}

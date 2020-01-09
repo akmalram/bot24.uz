@@ -1,0 +1,120 @@
+.guarantee {
+  color: #2379be;
+  padding: 80px 0;
+}
+
+.guarantee .title-primary {
+  margin-bottom: 30px;
+}
+
+.guarantee .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.guarantee .content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(50% - 30px);
+}
+
+@media screen and (max-width: 1024px) {
+  .guarantee .content {
+    width: calc(75% - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .guarantee .content {
+    width: calc(100% - 30px);
+  }
+}
+
+.guarantee .image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(50% - 30px);
+  text-align: center;
+}
+
+.guarantee-item {
+  position: relative;
+  padding-left: 150px;
+  margin-bottom: 50px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guarantee-item .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.guarantee-item .text {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .guarantee .content {
+    background: url("../images/like-transparent.png") no-repeat center center;
+  }
+  .guarantee .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .guarantee .content {
+    background: none;
+  }
+  .guarantee-item {
+    padding-left: 100px;
+    height: 100px;
+  }
+  .guarantee-item .icon {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .guarantee {
+    padding: 30px 0;
+  }
+  .guarantee .title-primary {
+    margin-bottom: 20px;
+  }
+  .guarantee-item {
+    padding-left: 60px;
+    margin-bottom: 20px;
+    height: 60px;
+  }
+  .guarantee-item .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .guarantee-item .text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+/*# sourceMappingURL=guarantee.css.map */

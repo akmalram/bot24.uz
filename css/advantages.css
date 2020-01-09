@@ -1,0 +1,137 @@
+.advantages {
+  background: #2379be;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.advantages .title-primary {
+  margin-bottom: 30px;
+}
+
+.advantages .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.advantages .content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(41.66667% - 30px);
+}
+
+@media screen and (max-width: 1024px) {
+  .advantages .content {
+    width: calc(75% - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advantages .content {
+    width: calc(100% - 30px);
+  }
+}
+
+.advantages .image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(58.33333% - 30px);
+  text-align: center;
+}
+
+.advantages-item {
+  position: relative;
+  padding-left: 150px;
+  margin-bottom: 50px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages-item .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.advantages-item .title {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.advantages-item .text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .advantages .content {
+    background: url("../images/check-transparent.png") no-repeat center center;
+  }
+  .advantages .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages .content {
+    background: none;
+  }
+  .advantages-item {
+    padding-left: 100px;
+    height: 100px;
+  }
+  .advantages-item .icon {
+    width: 90px;
+    height: 90px;
+  }
+  .advantages-item .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advantages {
+    padding: 30px 0;
+  }
+  .advantages .title-primary {
+    margin-bottom: 20px;
+  }
+  .advantages-item {
+    padding-left: 60px;
+    margin-bottom: 20px;
+    height: 60px;
+  }
+  .advantages-item .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .advantages-item .title {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  .advantages-item .text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+/*# sourceMappingURL=advantages.css.map */

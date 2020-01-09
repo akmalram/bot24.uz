@@ -1,0 +1,156 @@
+@import './smart-grid.scss';
+
+.projects {
+    padding: 80px 0;
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    .projects-container.hide .project.hidable {
+        display: none;
+    }
+
+    @include xs-block {
+        .btn-primary {
+            font-size: 20px;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: none;
+        width: 40px;
+        height: 40px;
+        outline: none
+    }
+}
+
+.project {
+    background: #2379be;
+    color: #fff;
+    margin: 10px auto;
+    margin-bottom: 22px;
+    margin-top: 0;
+    max-width: 100%;
+    width: 350px;
+    padding: 30px 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    min-height: 345px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+    &-head {
+        display: flex;
+
+        .img {
+            margin-right: 10px;
+            min-width: 80px;
+            max-width: 80px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+    }
+
+    .mt20 {
+        margin-top: 20px;
+    }
+
+    &-open-link {
+        font-size: 22px;
+        cursor: pointer;
+        color: #2379be;
+        padding: 4px 17px;
+        border-radius: 6px;
+        line-height: 1;
+        display: inline-block;
+        background-color: #fff;
+        font-weight: bold;
+
+        i {
+            display: inline-block;
+            margin: 0 .07em;
+            vertical-align: -0.1em;
+            background: none;
+            padding: 0;
+            margin-right: 5px;
+        }
+    }
+
+    &-desc {
+        margin-bottom: auto;
+        p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        ul {
+            margin: 22px 25px 0 10px;
+
+            li {
+                list-style: disc !important;
+            }
+        }
+    }
+
+    @include xs-block {
+        padding: 15px;
+        &-title {
+            font-size: 18px;
+        }
+
+        &-open-link {
+            font-size: 21px;
+            line-height: 30px;
+            cursor: pointer;
+            color: #fff;
+
+            img {
+                display: inline-block;
+                border: none;
+                box-shadow: none;
+                height: 1em;
+                width: 1em;
+                margin: 0 .07em;
+                vertical-align: -0.1em;
+                background: none;
+                padding: 0;
+                margin-right: 10px;
+            }
+        }
+
+        .img {
+            margin-right: 10px;
+            min-width: auto;
+
+            img {
+                width: 60px;
+                border-radius: 50%;
+            }
+        }
+
+        &-desc {
+            p {
+                font-size: 17px;
+                line-height: 30px;
+            }
+
+            ul {
+                margin: 12px 15px 0 10px;
+
+                li {
+                    list-style: disc !important;
+                }
+            }
+        }
+    }
+}
