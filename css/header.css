@@ -102,22 +102,6 @@ header .menu .list {
           box-sizing: border-box;
 }
 
-header .menu .list .nav-contact-link {
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  font-size: 24px;
-  line-height: 1.5;
-  color: #2379be;
-}
-
-header .menu .list .nav-contact-link:hover {
-  color: #92bddf;
-}
-
-header .menu .list .nav-contact-link i {
-  margin-right: 10px;
-}
-
 header .menu .list-item {
   margin-right: 15px;
 }
@@ -127,7 +111,7 @@ header .menu .list-item.main {
 }
 
 header .menu .list-link {
-  font-size: 25px;
+  font-size: 22px;
   color: #fff;
 }
 
@@ -138,7 +122,7 @@ header .menu .list-link.active {
 header .nav-contact-link {
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
   color: #fff;
 }
