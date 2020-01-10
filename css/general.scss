@@ -16,6 +16,10 @@ body {
     @include xs(display, block);
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .show-sm {
     display: none;
     @include sm(display, block);

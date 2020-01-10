@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     let menuToggler = () => {
         let btn = document.querySelector('header .btn-toggle');
         let menu = document.querySelector('nav .menu');

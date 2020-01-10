@@ -86,6 +86,10 @@ body {
   }
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .show-sm {
   display: none;
 }
