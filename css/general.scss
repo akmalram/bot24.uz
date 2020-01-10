@@ -4,7 +4,7 @@
 
 body {
     font-size: 16px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Gilroy', sans-serif;
 }
 
 .container {
@@ -29,6 +29,32 @@ img {
     max-width: 100%;
 }
 
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Bold.eot) format("eot"),
+         url(../fonts/Gilroy-Bold.ttf) format("truetype"),
+         url(../fonts/Gilroy-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Thin.eot) format("eot"),
+         url(../fonts/Gilroy-Thin.ttf) format("truetype"),
+         url(../fonts/Gilroy-Thin.woff) format("woff");
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Regular.eot) format("eot"),
+         url(../fonts/Gilroy-Regular.ttf) format("truetype"),
+         url(../fonts/Gilroy-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
 
 .title-primary {
     font-size: 60px;
