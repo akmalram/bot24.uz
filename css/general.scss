@@ -127,6 +127,11 @@ img {
     &:focus {
         outline: none;
     }
+
+    @include sm-block {
+        padding: 10px 30px;
+        font-size: 25px;
+    }
 }
 
 .btn-primary.white {

@@ -211,6 +211,13 @@ img {
   outline: none;
 }
 
+@media screen and (max-width: 768px) {
+  .btn-primary {
+    padding: 10px 30px;
+    font-size: 25px;
+  }
+}
+
 .btn-primary.white {
   background-color: #fff;
   color: #2379be;

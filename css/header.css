@@ -54,22 +54,9 @@ header .scroll-down {
   display: block;
   position: absolute;
   left: 50%;
-  bottom: 20px;
+  bottom: 25px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-@media screen and (max-width: 576px) {
-  header .scroll-down {
-    right: 10%;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    left: auto;
-  }
-  header .scroll-down span {
-    width: 15px;
-    height: 15px;
-  }
 }
 
 header .scroll-down span {
@@ -100,6 +87,13 @@ header .scroll-down span:nth-of-type(3) {
           animation-delay: 600ms;
 }
 
+@media screen and (max-width: 576px) {
+  header .scroll-down span {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 header .menu .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,7 +105,7 @@ header .menu .list {
 header .menu .list .nav-contact-link {
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.5;
   color: #2379be;
 }
@@ -144,7 +138,7 @@ header .menu .list-link.active {
 header .nav-contact-link {
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.5;
   color: #fff;
 }
@@ -348,6 +342,9 @@ header .messengers .btn-telegram:hover {
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    padding: 80px 0;
+  }
   header nav {
     padding: 11px 20px;
   }
@@ -426,6 +423,9 @@ header .messengers .btn-telegram:hover {
   .header-inner .image-block {
     display: none;
   }
+  .header-inner .content {
+    text-align: center;
+  }
   .header-inner .content-title {
     font-size: 35px;
     line-height: 40px;
@@ -445,13 +445,13 @@ header .messengers .btn-telegram:hover {
     padding: 0;
   }
   .header-inner .content-title {
-    font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
   .header-inner .content-desc {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.2;
   }
   .header-inner .btn-primary {
     margin-top: 20px;
