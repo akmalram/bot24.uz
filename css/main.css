@@ -1,4 +1,10 @@
 main {
   background: #F4F4F4;
 }
+
+.hdn-text {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
 /*# sourceMappingURL=main.css.map */
