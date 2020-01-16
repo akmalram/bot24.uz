@@ -90,6 +90,11 @@
           justify-content: center;
 }
 
+.map-form .btn-primary:hover {
+  background-color: #319cf1;
+  color: #fff;
+}
+
 .map {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

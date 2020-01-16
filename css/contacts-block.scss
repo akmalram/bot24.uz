@@ -84,6 +84,13 @@
     .row {
         justify-content: center;
     }
+
+    .btn-primary {
+        &:hover {
+            background-color: #319cf1;
+            color: #fff;
+        }
+    }
 }
 
 .map {
