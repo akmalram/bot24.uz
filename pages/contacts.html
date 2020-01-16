@@ -167,13 +167,12 @@
                     url: "../send.php",
                     data: $(form).serialize(),
                 })
-                    .done(function () {
-                        alert('Ваша заявка принята!');
-                        form.reset();
-                    });
-            });
+                .done(function () {
+                    alert('Ваша заявка принята!');
+                    form.reset();
+                });
 
-            $.ajax({
+                $.ajax({
                     method: "POST",
                     url: "../send-to-tg.php",
                     data: $(form).serialize(),
@@ -181,6 +180,7 @@
                 .done(function () {
                     form.reset();
                 });
+            });
         })();
     </script>
 </body>
