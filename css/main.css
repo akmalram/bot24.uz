@@ -2,9 +2,51 @@ main {
   background: #F4F4F4;
 }
 
-.hdn-text {
+.volandemort {
+  background-color: #2379be;
+  color: #fff;
+}
+
+.volandemort h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .volandemort h3 {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .volandemort p {
+    font-size: 14px;
+  }
+}
+
+.volandemort-label {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.volandemort-label:hover {
+  text-decoration: underline;
+}
+
+.volandemort-checkbox {
+  visibility: hidden;
+  display: none;
+}
+
+.volandemort-checkbox:checked + .volandemort p,
+.volandemort-checkbox:checked + .volandemort h3 {
   max-height: 0;
   overflow: hidden;
-  visibility: hidden;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,8 +4,47 @@ main {
     background: #F4F4F4;
 }
 
-.hdn-text {
-    max-height: 0;
-    overflow: hidden;
-    visibility: hidden;
+.volandemort {
+    background-color: #2379be;
+    color: #fff;
+
+    h3 {
+        font-size: 30px;
+        margin: 10px 0;
+        @include sm-block {
+            font-size: 23px;
+        }
+    }
+
+    p {
+        @include sm-block {
+            font-size: 14px;
+        }
+    }
+
+    &-label {
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-checkbox {
+        visibility: hidden;
+        display: none;
+
+        &:checked + .volandemort p,
+        &:checked + .volandemort h3 {
+            max-height: 0;
+            overflow: hidden;
+            margin:  0;
+        }
+    }
 }
